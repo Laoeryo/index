@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>风雅梦华游</title>
+		<style type="text/css">
+			.major{
+				width: 1280px;
+				height: 768px;
+				background-image: url("img/主界面.jpg");
+				margin: 0 auto;
+			}
+			#chuan{
+				left:525px;
+				top:400px;
+				position: relative;
+				/*animation: action1 3s linear infinite;*/
+			}
+			#denglong{
+				top:-170px;
+				left:-220px;
+				position: relative;
+				/*animation: action2 2s linear infinite;*/
+			}
+			#hehua{
+				top:25px;
+				left:225px;
+				position: relative;
+			}
+			#start{
+				top: -150px;
+				left:500px;
+				position: relative;
+			}
+			/*@keyframes action2{
+				0%{
+					top:-170px;
+					left:-220px;
+				}
+				50%{
+					top:-180px;
+					left:-250px;
+				}
+				100%{
+					top:-170px;
+					left:-220px;
+				}
+			}
+			/*@keyframes action1{
+				0%{
+					top:400px;
+				}
+				50%{
+					top:380px;
+				}
+				100%{
+					top:400px;
+				}
+			}*/
+		</style>
+	</head>
+	<body>
+		<div class="major">
+			<div> 
+				<img id="chuan" src="img/船.png" />
+				<img id="denglong" src="img/灯笼.png" />
+				<img id="hehua" src="img/荷花.png" />
+				<a href="https://lezhhh.github.io/Web1/地图/new_file"  ><img id="start" onmouseover="fangda()" onmouseout="huanyuan()" src="img/开始游戏按钮.png" /></a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			move();
+			function fangda(){
+				document.getElementById("start").style.width="270px";
+				document.getElementById("start").style.height="120px";
+			}
+			function huanyuan(){
+				document.getElementById("start").style.width="250px";
+				document.getElementById("start").style.height="100px";
+			}
+			var left1=525;//chuan的左边距
+			var left2=-220;//denglong的上边距
+			var raf=null;
+			function move(){//移动图片
+				document.getElementById("chuan").style.left=left1+"px";
+    	  		left1-=0.1;
+    	  		document.getElementById("denglong").style.left=left2+"px";
+    	  		left2-=0.2;
+    	  		//图片到达位置后，往回移动
+    	  		if(left1<=490){
+    	  			left1=525;
+    	  		}
+    	  		if(left2<=-250){
+    	  			left2=-220;
+    	  		}
+    	  		//设置帧频
+    	  		raf = window.requestAnimationFrame(move);
+			}
+		</script>
+	</body>
+</html>
