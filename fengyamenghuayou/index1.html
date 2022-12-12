@@ -32,7 +32,7 @@
 				left:500px;
 				position: relative;
 			}
-			/*@keyframes action2{
+			@keyframes action2{
 				0%{
 					top:-170px;
 					left:-220px;
@@ -46,7 +46,7 @@
 					left:-220px;
 				}
 			}
-			/*@keyframes action1{
+			@keyframes action1{
 				0%{
 					top:400px;
 				}
@@ -56,7 +56,7 @@
 				100%{
 					top:400px;
 				}
-			}*/
+			}
 		</style>
 	</head>
 	<body>
@@ -69,7 +69,6 @@
 			</div>
 		</div>
 		<script type="text/javascript">
-			move();
 			function fangda(){
 				document.getElementById("start").style.width="270px";
 				document.getElementById("start").style.height="120px";
@@ -81,7 +80,7 @@
 			var left1=525;//chuan的左边距
 			var left2=-220;//denglong的上边距
 			var raf=null;
-			function move(){//移动图片
+			/*function move(){//移动图片
 				document.getElementById("chuan").style.left=left1+"px";
     	  		left1-=0.1;
     	  		document.getElementById("denglong").style.left=left2+"px";
@@ -95,7 +94,7 @@
     	  		}
     	  		//设置帧频
     	  		raf = window.requestAnimationFrame(move);
-			}
+			}*/
 		</script>
 	</body>
 </html>
