@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>挂画</title>
+		<style type="text/css">
+			#major{
+				width: 1280px;
+				height: 768px;
+				margin: 0 auto;
+				background-image: url("img/室内21.jpg");
+			}
+			#viewbox1{
+				position: relative;
+				width: 134px;
+				height: 285px;
+				left: 182px;
+				top: 237px;
+				overflow: hidden;
+			}
+			#list1{
+				position: relative;
+				top: 5px;
+				left: 2px;
+				display: flex;
+				width: 402px;
+				height: 100%;
+				transition: all 1s ease;
+			}
+			#zuo1{
+				position: relative;
+				left: 120px;
+				top: 50px;
+			}
+			#you1{
+				position: relative;
+				left: 255px;
+				top: 45px;
+			}
+			#viewbox2{
+				position: relative;
+				width: 134px;
+				height: 285px;
+				left: 960px;
+				top:-123px;
+				overflow: hidden;
+			}
+			#list2{
+				position: relative;
+				display: flex;
+				width: 402px;
+				height: 100%;
+				transition: all 1s ease;
+			}
+			#zuo2{
+				position: relative;
+				left: 900px;
+				top: -300px;
+			}
+			#you2{
+				position: relative;
+				left: 1035px;
+				top: -305px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="major">
+			<div id="viewbox1">
+				<div id="list1">
+					<div><img src="img/左边 千里江山图.png" /></div>
+					<div><img src="img/左边 溪山雪意.png" /></div>
+					<div><img src="img/左边 踏歌图.png" /></div>
+				</div>
+			</div>
+			<img id="zuo1" src="img/画幅移动标.png"  />
+			<img id="you1" src="img/画幅移动标右.png" />
+			<div id="viewbox2">
+				<div id="list2">
+					<div><img src="img/右边 仙山.png" /> </div>
+					<div><img src="img/右边 早春图.png" /> </div>
+					<div><img src="img/右边 溪山行旅.png" /> </div>
+				</div>
+			</div>
+			<img src="img/画幅移动标.png" id="zuo2" />
+				<img src="img/画幅移动标右.png" id="you2" />
+		</div>
+		<script type="text/javascript">
+			var index = 0;
+      		window.onload = function(){
+        	//左按扭
+        		document.getElementById("zuo1").onclick = function(){
+          			index--;
+          			if(index < 0){
+            		index = 0;
+          		}
+          		document.getElementById("list1").style.left =-(index*134)+"px";
+        		}
+        	//右按扭
+       			document.getElementById("you1").onclick = function(){
+          			index++;
+          			if(index > 2){
+            			index = 2;
+          			}
+          		document.getElementById("list1").style.left =-(index*134)+"px";
+        		}
+       			//左按扭
+       			document.getElementById("zuo2").onclick = function(){
+          			index--;
+          			if(index < 0){
+            		index = 0;
+          		}
+          		document.getElementById("list2").style.left =-(index*134)+"px";
+        		}
+        	//右按扭
+       			document.getElementById("you2").onclick = function(){
+          			index++;
+          			if(index > 2){
+            			index = 2;
+          			}
+          		document.getElementById("list2").style.left =-(index*134)+"px";
+        		}
+      		}
+		</script>
+	</body>
+</html>
