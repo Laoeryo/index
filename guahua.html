@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>挂画</title>
+		<style type="text/css">
+			#major{
+				width: 1280px;
+				height: 768px;
+				margin: 0 auto;
+				background-image: url("img/室内21.jpg");
+			}
+			#viewbox1{
+				position: relative;
+				width: 134px;
+				height: 285px;
+				left: 182px;
+				top: 237px;
+				overflow: hidden;
+			}
+			#list1{
+				position: relative;
+				top: 5px;
+				left: 2px;
+				display: flex;
+				width: 402px;
+				height: 100%;
+				transition: all 1s ease;
+			}
+			#zuo1{
+				position: relative;
+				left: 120px;
+				top: 50px;
+			}
+			#you1{
+				position: relative;
+				left: 255px;
+				top: 45px;
+			}
+			#viewbox2{
+				position: relative;
+				width: 134px;
+				height: 285px;
+				left: 960px;
+				top:-123px;
+				overflow: hidden;
+			}
+			#list2{
+				position: relative;
+				display: flex;
+				left: 0;
+				width: 402px;
+				height: 100%;
+				transition: all 1s ease;
+			}
+			#zuo2{
+				position: relative;
+				left: 900px;
+				top: -350px;
+			}
+			#you2{
+				position: relative;
+				left: 1035px;
+				top: -355px;
+			}
+			#music{
+				position: relative;
+				left: 1050px;
+				top: -650px;
+			}
+			#restart{
+				position: relative;
+				left:947px;
+				top:-550px;
+			}
+			#next{
+				position: relative;
+				left: 840px;
+				top: -440px;
+			}
+			#tg{
+				position: relative;
+				left: 400px;
+				top: -1400px;
+				display: none;
+			}
+			#button{
+				position: relative;
+				left: 560px;
+				top:-1350px;
+				display: none;
+			}
+			#itro{
+				position: relative;
+				top: -1500px;
+				left: 100px;
+			}
+			#butt{
+				position: relative;
+				top: -1600px;
+				left: 550px;
+			}
+			#map{
+				position: relative;
+				left: 735px;
+				top: -330px;
+			}
+			#jt{
+				position: relative;
+				left: -530px;
+			}
+			#mohu{
+				position: relative;
+				top: -769px;
+				display: none;
+			}
+			#kp{
+				position: relative;
+				top: -670px;
+				left: -570px;
+			}
+			#leftImage{
+				position: relative;
+				top: -550px;
+				display: none;
+			}
+			#rightImage{
+				position: relative;
+				left: 700px;
+				top: -900px;
+				display: none;
+			}
+			#leftImage2{
+				position: relative;
+				top: 0px;
+				left: 0px;
+				display: none;
+			}
+			#leftImage3{
+				position: relative;
+				
+				display: none;
+			}
+			#cha1{
+				position: relative;
+				left: 505px;
+				top: -818px;
+				display: none;
+			}
+			#cha2{
+				position: relative;
+				left: 1180px;
+				top: -1130px;
+				display: none;
+			}
+			#cha3{
+				position: relative;
+				display: none;
+				top: -1150px;
+				left: 1195px;
+			}
+			#cha4{
+				position: relative;
+				top: -1173px;
+				left: 1225px;
+				display: none;
+			}
+			#cha5{
+				position: absolute;
+				top: 295px;
+				left: 774px;
+				display: none;
+			}
+			#cha6{
+				position: absolute;
+				top: 302px;
+				left: 765px;
+				display: none;
+			}
+			#tishi{
+				position: relative;
+				top: -1400px;
+				left: 235px;
+				display: none;
+			}
+			#bu{
+				position: relative;
+				top: -1400px;
+				left: 600px;
+				display: none;
+			}
+			#mohu2{
+				position: relative;
+				top: -768px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="major">
+			<div id="viewbox1">
+				<div id="list1">
+					<div><img src="img/左边 千里江山图.png" /></div>
+					<div><img src="img/左边 溪山雪意.png" /></div>
+					<div><img src="img/左边 踏歌图.png" /></div>
+				</div>
+			</div>
+			<img id="zuo1" src="img/画幅移动标.png"  />
+			<img id="you1" src="img/画幅移动标右.png" />
+			<div id="viewbox2">
+				<div id="list2">
+					<div><img src="img/右边 仙山.png" /> </div>
+					<div><img src="img/右边 早春图.png" /> </div>
+					<div><img src="img/右边 溪山行旅.png" /> </div>
+				</div>
+			</div>
+			<img src="img/画幅移动标.png" id="zuo2" />
+			<img src="img/画幅移动标右.png" id="you2" />
+			<audio id="au" src="bjyy.mp3" autoplay="autoplay" preload="auto" loop="loop"></audio>
+			<a href="javascript:playPause();"><img id="music" src="img/音乐图标.png" /></a>
+			<a href="javascript:location.reload();"><img id="restart" src="img/重新开始图标.png" /> </a>
+			<a href="https://lezhhh.github.io/Web1/地图/new_file3"><img src="img/下一关图标.png" id="next" /></a>
+			<a href="https://lezhhh.github.io/Web1/地图/new_file2"><img src="img/dt.png" id="map" /> </a>
+			<a><img src="img/不发光.png" id="jt" /></a>
+			<img src="img/模糊背景.png" id="mohu" />
+			<img src="img/恭喜通关.png" id="tg"  />
+			<a href="https://lezhhh.github.io/Web1/地图/new_file3"><img id="button" src="img/恭喜通关 点击下一关的按钮.png" /></a>
+			<img src="img/科普卷轴图标.png" id="kp" />
+			<div>
+				<img src="img/千里江山图科普.png" id="leftImage" />	
+				<a href="javascript:close();"><img src="img/×.png" id="cha1" /></a>
+				<img src="img/仙山科普.png" id="rightImage"  />
+				<a href="javascript:close();"><img src="img/×.png" id="cha2" /></a>
+				<a href="javascript:close();"><img src="img/×.png" id="cha3" /></a>														
+				<a href="javascript:close();"><img src="img/×.png" id="cha4" /></a>
+				<a href="javascript:close();"><img src="img/×.png" id="cha5" /></a>
+				<a href="javascript:close();"><img src="img/×.png" id="cha6" /></a>
+				
+			</div>
+			<div>
+				<img src="img/模糊背景.png" id="mohu2" />
+				<img id="itro" src="img/开始这一关卡的介绍卷轴.png" />
+				<a href="javascript:start();"><img id="butt" src="img/开始这一关卡的介绍卷轴 下面的按钮.png" /></a>
+				<img id="tishi" src="img/提示.png" />
+				<a href="javascript:start2();"><img id="bu" src="img/提示下面的按钮.png" /></a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var index = 0;
+			var index2 = 0;
+      		window.onload = function(){
+        	//左按扭
+        		document.getElementById("zuo1").onclick = function(){
+          			index--;
+          			if(index < 0){
+            		index = 0;
+          		}
+          		document.getElementById("list1").style.left =-(index*134)+"px";
+        		}
+        	//右按扭
+       			document.getElementById("you1").onclick = function(){
+          			index++;
+          			if(index > 2){
+            			index = 2;
+          			}
+          		document.getElementById("list1").style.left =-(index*134)+"px";
+        		}
+       			//左按扭
+       			document.getElementById("zuo2").onclick = function(){
+          			index2--;
+          			if(index2 < 0){
+            		index2 = 0;
+          		}
+          		document.getElementById("list2").style.left =-(index2*134)+"px";
+        		}
+        	//右按扭
+       			document.getElementById("you2").onclick = function(){
+          			index2++;
+          			if(index2 > 2){
+            			index2 = 2;
+          			}
+          		document.getElementById("list2").style.left =-(index2*134)+"px";
+        		}
+      		}
+      		//添加监听
+      		document.getElementById("list1").addEventListener("transitionend",handle);
+      		document.getElementById("list2").addEventListener("transitionend",handle);
+      		//选择图画器
+      		function handle(){
+      			//左1右1
+      			if(index==0&&index2==0){
+      				document.getElementById("kp").onclick=function(){
+      				    document.getElementById("leftImage").style.display="block";
+      				    document.getElementById("leftImage").src="img/千里江山图科普.png";
+      			        document.getElementById("rightImage").style.display="block";
+      			        document.getElementById("rightImage").src="img/仙山科普.png";
+      			        document.getElementById("cha1").style.display="block";
+      			        document.getElementById("cha2").style.display="block";
+      				}
+      				document.getElementById("jt").src="img/不发光.png";
+      			}
+      			//左1右2
+      			if(index==0&&index2==1){
+      				document.getElementById("kp").onclick=function(){
+      					document.getElementById("cha1").style.display="block";
+      			        document.getElementById("cha3").style.display="block";
+      			        document.getElementById("leftImage").style.display="block";
+      			        document.getElementById("leftImage").src="img/千里江山图科普.png";
+      			        document.getElementById("rightImage").style.display="block";
+      			        document.getElementById("rightImage").src="img/早春科普.png";
+      				}
+      				document.getElementById("jt").src="img/不发光.png";
+      			}
+      			//左1右3
+      			if(index==0&&index2==2){
+      				document.getElementById("kp").onclick=function(){
+      					document.getElementById("leftImage").style.display="block";
+      					document.getElementById("leftImage").src="img/千里江山图科普.png";
+      					document.getElementById("cha1").style.display="block";
+      			        document.getElementById("cha4").style.display="block";
+      			        document.getElementById("rightImage").style.display="block";
+      			        document.getElementById("rightImage").src="img/溪山科普.png";
+      				}
+      				document.getElementById("jt").src="img/不发光.png";
+      			}
+      			//左2右1
+      			if(index==1&&index2==0){
+      				document.getElementById("kp").onclick=function(){
+      					document.getElementById("leftImage").style.display="block";
+      					document.getElementById("leftImage").src="img/溪山雪意科普.png";
+      					document.getElementById("cha5").style.display="block";
+      			        document.getElementById("cha2").style.display="block";
+      			        document.getElementById("rightImage").style.display="block";
+      			        document.getElementById("rightImage").src="img/仙山科普.png";
+      				}
+      				document.getElementById("jt").src="img/不发光.png";
+      			}
+      			//左2右2
+      			if(index==1&&index2==1){
+      				document.getElementById("kp").onclick=function(){
+      					document.getElementById("leftImage").style.display="block";
+      					document.getElementById("leftImage").src="img/溪山雪意科普.png";
+      					document.getElementById("rightImage").style.display="block";
+      					document.getElementById("rightImage").src="img/早春科普.png";
+      					document.getElementById("cha5").style.display="block";
+      			        document.getElementById("cha3").style.display="block";
+      				}
+      				document.getElementById("jt").src="img/不发光.png";
+      			}
+      			//左2右3
+      			if(index==1&&index2==2){
+      				document.getElementById("kp").onclick=function(){
+      					document.getElementById("leftImage").style.display="block";
+      					document.getElementById("leftImage").src="img/溪山雪意科普.png";
+      					document.getElementById("rightImage").style.display="block";
+      			        document.getElementById("rightImage").src="img/溪山科普.png";
+      					document.getElementById("cha5").style.display="block";
+      			        document.getElementById("cha4").style.display="block";
+      				}
+      				document.getElementById("jt").src="img/不发光.png";
+      			}
+      			//左3右1
+      			if(index==2&&index2==0){
+      				document.getElementById("kp").onclick=function(){
+      					document.getElementById("leftImage").style.display="block";
+      					document.getElementById("leftImage").src="img/踏歌科普.png";
+      					document.getElementById("cha6").style.display="block";
+      					document.getElementById("rightImage").style.display="block";
+      			        document.getElementById("rightImage").src="img/仙山科普.png";
+      			        document.getElementById("cha2").style.display="block";
+      				}
+      				document.getElementById("jt").src="img/不发光.png";
+      			}
+      			//左3右2
+      			if(index==2&&index2==1){
+      				document.getElementById("jt").src="img/发光相机图标.png";
+      				document.getElementById("jt").onclick=function(){
+      					document.getElementById("mohu").style.display="block";
+      					document.getElementById("tg").style.display="block";
+      					document.getElementById("button").style.display="block";
+      				}
+      				document.getElementById("kp").onclick=function(){
+      					document.getElementById("leftImage").style.display="block";
+      					document.getElementById("leftImage").src="img/踏歌科普.png";
+      					document.getElementById("cha6").style.display="block";
+      					document.getElementById("rightImage").style.display="block";
+      			        document.getElementById("rightImage").src="img/早春科普.png";
+      			        document.getElementById("cha3").style.display="block";
+      				}
+      				
+      			}
+      			//左3右3
+      			if(index==2&&index2==2){
+      				document.getElementById("kp").onclick=function(){
+      					document.getElementById("leftImage").style.display="block";
+      					document.getElementById("leftImage").src="img/踏歌科普.png";
+      					document.getElementById("cha6").style.display="block";
+      					document.getElementById("rightImage").style.display="block";
+      			        document.getElementById("rightImage").src="img/溪山科普.png";
+      			        document.getElementById("cha4").style.display="block";
+      				}
+      				document.getElementById("jt").src="img/不发光.png";
+      			}
+      		}
+      		document.addEventListener("click",function(){
+	    		document.getElementById("au").play();
+	    	})
+      		function playPause() {
+         		var music = document.getElementById("au");    
+         		var music_btn = document.getElementById("music");    
+         		if (music.paused){    
+             		music.play();      
+         		}    
+         		else{    
+             		music.pause();                   
+         		}
+         	}
+      		function next(){
+      			document.getElementById("tg").style.display="block";
+      			document.getElementById("button").style.display="block";
+      		}
+      		function start(){
+      			document.getElementById("itro").style.display="none";
+      			document.getElementById("butt").style.display="none";
+      			document.getElementById("tishi").style.display="block";
+      			document.getElementById("bu").style.display="block";
+      		}
+      		function close(){
+      			document.getElementById("leftImage").style.display="none";
+      			document.getElementById("cha1").style.display="none";
+      			document.getElementById("cha5").style.display="none";
+      			document.getElementById("cha3").style.display="none";
+      			document.getElementById("cha4").style.display="none";
+      			document.getElementById("rightImage").style.display="none";
+      			document.getElementById("cha2").style.display="none";
+      			document.getElementById("cha6").style.display="none";
+      		}
+      		function start2(){
+      			document.getElementById("mohu2").style.display="none";
+      			document.getElementById("tishi").style.display="none";
+      			document.getElementById("bu").style.display="none";
+      		}
+		</script>
+	</body>
+</html>
