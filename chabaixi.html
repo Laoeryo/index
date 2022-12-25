@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>茶百戏</title>
+		<style type="text/css">
+			#major{
+				width: 1280px;
+				height: 768px;
+				margin: 0 auto;
+				background-image: url("img/茶百戏/无提壶背景.jpg");
+			}
+			#kuang{
+				position: relative;
+				top: 244px;
+			}
+			ul{
+				width: 50px;
+				list-style-type:none;
+				position: relative;
+				top: -20px;
+				color: saddlebrown;
+			}
+			ul li{
+				line-height: 35px;
+			}
+			#li{
+				color: saddlebrown;
+				text-decoration: none;
+			}
+			#hu{
+				position: relative;
+				top: -350px;
+				left: 630px;
+			}
+			#wan{
+				position: relative;
+				top: -336px;
+				left: 605px;
+			}
+			#hand{
+				display: none;
+				position: relative;
+				top: -520px;
+				left: 680px;
+				animation: hand 1s linear infinite;
+			}
+			#hand2{
+				display: none;
+				position: relative;
+				top: -260px;
+				left: 1100px;
+				animation: hand2 1s linear infinite;
+			}
+			#daoshui{
+				display: none;
+				position: relative;
+				top: -576px;
+				left: 852px;
+			}
+			#chaguan{
+				display: none;
+				position: relative;
+				top: -531px;
+				left: 872px;
+			}
+			#hand3{
+				display: none;
+				position: relative;
+				top: 300px;
+				left: 1080px;
+				animation: hand3 1s linear infinite;
+			}
+			#wan2{
+				display: none;
+				position: relative;
+				top: -373px;
+				left: 990px;
+			}
+			#chawan{
+				display: none;
+				position: relative;
+				top: -390px;
+				left: 977px;
+			}
+			#chasao{
+				display: none;
+				position: relative;
+				top: -754px;
+				left: 462px;
+			}
+			#hand4{
+				display: none;
+				position: relative;
+				top: -800px;
+				left: 500px;
+				animation: hand4 1s linear infinite;
+			}
+			#hand5{
+				display: none;
+				position: relative;
+				top: -700px;
+				left: 1100px;
+				animation: hand5 1s linear infinite;
+			}
+			#dacha{
+				display: none;
+				position: relative;
+				top: -497px;
+				left: 975px;
+			}
+			#chapan{
+				display: none;
+				position: relative;
+				top: -617px;
+				left: 448px;
+			}
+			#hand6{
+				display: none;
+				position: relative;
+				top: -950px;
+				left: 1100px;
+				animation: hand6 1s linear infinite;
+			}
+			#hand7{
+				display: none;
+				position: relative;
+				top: -800px;
+				left: 600px;
+				animation: hand7 1s linear infinite;
+			}
+			#rupan{
+				display: none;
+				position: relative;
+				top: -397px;
+				left: 418px;
+			}
+			#chashi{
+				display: none;
+				position: relative;
+				top: -925px;
+				left: 233px;
+			}
+			#hand8{
+				display: none;
+				position: relative;
+				top: -938px;
+				left: 253px;
+				animation: hand8 1s linear infinite;
+			}
+			#hand9{
+				display: none;
+				position: relative;
+				top: -658px;
+				left: 650px;
+				animation: hand9 1s linear infinite;
+			}
+			#zuohua{
+				display: none;
+				position: relative;
+				top: -525px;
+				left: 430px;
+			}
+			#hand10{
+				display: none;
+				position: relative;
+				top: -655px;
+				left: 650px;
+				animation: hand9 1s linear infinite;
+			}
+			#final{
+				display: none;
+				position: relative;
+				top: -487px;
+				left: 445px;
+			}
+			#mohu{
+				display: none;
+				position: relative;
+				top: -1255px;
+			}
+			#music{
+				position: relative;
+				top:-520px;
+				left: 1170px;
+			}
+			#restart{
+				position: relative;
+				top: -430px;
+				left: 1065px;
+			}
+			#dt{
+				position: relative;
+				top: -330px;
+				left: 960px;
+			}
+			#next{
+				position: relative;
+				top: -220px;
+				left: 860px;
+			}
+			#kp{
+				position: relative;
+				top: -750px;
+				left: 50px;
+			}
+			#kp2{
+				position: relative;
+				display: none;
+				top: -850px;
+				left: 200px;
+			}
+			#hand11{
+				position: relative;
+				display: none;
+				animation: hand11 1s linear infinite;
+			}
+			#tongguan{
+				position: relative;
+				display: none;
+				top: -1900px;
+				left: 450px;
+			}
+			#xia{
+				position: relative;
+				display: none;
+				top: -1870px;
+				left: 610px;
+			}
+			#mohu2{
+				position: relative;
+				top: -871px;
+			}
+			#intro{
+				position: relative;
+				top: -1600px;
+				left: 120px;
+			}
+			#button{
+				position: relative;
+				top: -1700px;
+				left: 530px;
+			}
+			#tishi{
+				position: relative;
+				display: none;
+				top: -1500px;
+				left: 200px;
+			}
+			#but{
+				position: relative;
+				display: none;
+				top: -1630px;
+				left: 570px;
+			}
+			@keyframes hand{
+				0%{
+					top: -450px;
+					left: 900px;
+				}
+				50%{
+					top: -430px;
+					left: 920px;
+				}
+				100%{
+					top: -450px;
+					left: 900px;
+				}
+			}
+			@keyframes hand2{
+				0%{
+					top: -490px;
+					left: 1100px;
+				}
+				50%{
+					top: -470px;
+					left: 1120px;
+				}
+				100%{
+					top: -490px;
+					left: 1100px;
+				}
+			}
+			@keyframes hand3{
+				0%{
+					top: -600px;
+					left: 980px;
+				}
+				50%{
+					top: -580px;
+					left: 1000px;
+				}
+				100%{
+					top: -600px;
+					left: 980px;
+				}
+			}
+			@keyframes hand4{
+				0%{
+					top: -800px;
+					left: 520px;
+				}
+				50%{
+					top: -780px;
+					left: 540px;
+				}
+				100%{
+					top: -800px;
+					left: 520px;
+				}
+			}
+			@keyframes hand5{
+				0%{
+					top: -700px;
+					left: 1100px;
+				}
+				50%{
+					top: -680px;
+					left: 1120px;
+				}
+				100%{
+					top: -700px;
+					left: 1100px;
+				}
+			}
+			@keyframes hand6{
+				0%{
+					top: -950px;
+					left: 1100px;
+				}
+				50%{
+					top: -930px;
+					left: 1120px;
+				}
+				100%{
+					top: -950px;
+					left: 1100px;
+				}
+			}
+			@keyframes hand7{
+				0%{
+					top: -800px;
+					left: 600px;
+				}
+				50%{
+					top: -780px;
+					left: 620px;
+				}
+				100%{
+					top: -800px;
+					left: 600px;
+				}
+			}
+			@keyframes hand8{
+				0%{
+					top: -968px;
+					left: 283px;
+				}
+				50%{
+					top: -988px;
+					left: 263px;
+				}
+				100%{
+					top: -968px;
+					left: 283px;
+				}
+			}
+			@keyframes hand9{
+				0%{
+					top: -758px;
+					left: 650px;
+				}
+				50%{
+					top: -778px;
+					left: 630px;
+				}
+				100%{
+					top: -758px;
+					left: 650px;
+				}
+			}
+			@keyframes hand11{
+				0%{
+					top: -460px;
+					left: 1100px;
+				}
+				50%{
+					top: -440px;
+					left: 1120px;
+				}
+				100%{
+					top: -460px;
+					left: 1100px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="major">
+			<div>
+				<img src="img/茶百戏/步骤框.png" id="kuang" />
+				<ul>
+					<a href="javascript:daoshui();" id="li" ><li><b>倒水</b></li></a>
+					<a href="javascript:fangcha();" id="li"><li><b>放茶</b></li></a>
+					<a href="javascript:dacha();" id="li"><li><b>打茶</b></li></a>
+					<a href="javascript:rupan();" id="li"><li><b>入盘</b></li></a>
+					<a href="javascript:zuohua();" id="li"><li><b>作画</b></li></a>
+				</ul>
+			<div>
+				<a href="javascript:playPause();"><img src="img/音乐图标.png" id="music" /></a>
+				<audio src="zlxx.mp3" id="au"></audio>
+				<a href="javascript:location.reload();"><img src="img/重新开始图标.png" id="restart" /></a>
+				<a href="https://lezhhh.github.io/Web1/地图/new_file3"><img src="img/dt.png" id="dt" /></a>
+				<a href="https://www.baidu.com"><img src="img/下一关图标.png" id="next" /></a>
+			</div>
+			<a href="javascript:kp();"><img src="img/科普卷轴图标.png" id="kp" /></a>
+			<a href="javascript:daoshui2();"><img src="img/茶百戏/提壶.png" id="hu" /></a>
+			<a href="javascript:daoshui3();"><img src="img/茶百戏/茶盏.png" id="wan" /></a>
+			<img src="img/茶百戏/手图标.png" id="hand" />
+			<img src="img/茶百戏/手图标.png" id="hand2" />
+			<img src="img/茶百戏/倒水.png" id="daoshui" />
+			<a href="javascript:fangcha2()"><img src="img/茶百戏/茶罐.png" id="chaguan" /></a>
+			<img src="img/茶百戏/手图标.png" id="hand3" />
+			<a href="javascript:fangcha3();"><img src="img/茶百戏/茶盏.png" id="wan2" /></a>
+			<img src="img/茶百戏/手图标.png" id="hand11" />
+			<a href="javascript:dacha3();"><img src="img/茶百戏/加茶沫的茶碗.png" id="chawan" /></a>
+			<a href="javascript:dacha2();"><img src="img/茶百戏/茶芜.png" id="chasao" /></a>
+			<img src="img/茶百戏/手图标.png" id="hand4" />
+			<img src="img/茶百戏/手图标.png" id="hand5" />
+			<a href="javascript:rupan2();"><img src="img/茶百戏/打茶.png" id="dacha" /></a>
+			<a href="javascript:rupan3();"><img src="img/茶百戏/茶盘.png" id="chapan" /></a>
+			<img src="img/茶百戏/手图标.png" id="hand6" />
+			<img src="img/茶百戏/手图标.png" id="hand7" />
+			<a href="javascript:zuohua3();"><img src="img/茶百戏/入盘.png" id="rupan" /></a>
+			<a href="javascript:zuohua2();"><img src="img/茶百戏/茶匙.png" id="chashi" /></a>
+			<img src="img/茶百戏/手图标.png" id="hand8" />
+			<img src="img/茶百戏/手图标.png" id="hand9" />
+			<a href="javascript:zuohua4();"><img src="img/茶百戏/作画.png" id="zuohua" /></a>
+			<img src="img/茶百戏/手图标.png" id="hand10" />
+			<img src="img/茶百戏/完成.png" id="final" />
+			<img src="img/茶百戏/左上角的科普.png" id="kp2" />
+			<div>
+				<img src="img/模糊背景.png" id="mohu" />
+				<img src="img/恭喜通关.png" id="tongguan" />
+				<a href="https://www.baidu.com"><img src="img/恭喜通关 点击下一关的按钮.png" id="xia" /></a>
+			</div>
+			<div>
+				<img src="img/模糊背景.png" id="mohu2" />-->
+				<img src="img/茶百戏/开始这一关的介绍卷轴.png" id="intro" />
+				<a href="javascript:kaishi();"><img src="img/茶百戏/开始这一关卡的介绍卷轴 下面的按钮.png" id="button" /></a>
+				<img src="img/茶百戏/提示.jpg.png" id="tishi" />
+				<a href="javascript:close();"><img src="img/茶百戏/提示下面的按钮.png" id="but" /></a>
+			</div>
+		<script type="text/javascript">
+			function daoshui(){
+				
+				document.getElementById("hand").style.display="block";
+				
+			}
+			function daoshui2(){
+				document.getElementById("hand").style.display="none";
+				document.getElementById("hand2").style.display="block";
+			}
+			function daoshui3(){
+				document.getElementById("hand2").style.display="none";
+				document.getElementById("hu").style.display="none";
+				document.getElementById("wan").style.display="none";
+				document.getElementById("daoshui").style.display="block";
+			}
+			function fangcha(){
+				document.getElementById("daoshui").style.display="none";
+				document.getElementById("chaguan").style.display="block";
+				document.getElementById("hu").style.display="none";
+				document.getElementById("hand3").style.display="block";
+				document.getElementById("major").style.backgroundImage="url('img/茶百戏/无茶芜背景.jpg')";
+			}
+			function fangcha2(){
+				document.getElementById("hand3").style.display="none";
+				document.getElementById("hand11").style.display="block";
+				document.getElementById("wan2").style.display="block";
+				document.getElementById("chaguan").style.display="none";
+			}
+			function fangcha3(){
+				document.getElementById("hand11").style.display="none";
+				document.getElementById("wan2").style.display="none";
+				document.getElementById("chawan").style.display="block";
+			}
+			function dacha(){
+				document.getElementById("chasao").style.display="block";
+				document.getElementById("hand4").style.display="block";
+				document.getElementById("chaguan").style.display="none";
+			}
+			function dacha2(){
+				document.getElementById("hand4").style.display="none";
+				document.getElementById("hand5").style.display="block";
+				
+			}
+			function dacha3(){
+				document.getElementById("hand5").style.display="none";
+				document.getElementById("chawan").style.display="none";
+				document.getElementById("chasao").style.display="none";
+				document.getElementById("dacha").style.display="block";
+			}
+			function rupan(){
+				document.getElementById("hand6").style.display="block";
+				document.getElementById("chapan").style.display="block";
+			}
+			function rupan2(){
+				document.getElementById("hand6").style.display="none";
+				document.getElementById("hand7").style.display="block";
+			}
+			function rupan3(){
+				document.getElementById("chapan").style.display="none";
+				document.getElementById("hand7").style.display="none";
+				document.getElementById("rupan").style.display="block";
+				document.getElementById("dacha").style.display="none";
+				document.getElementById("major").style.backgroundImage="url('img/茶百戏/无茶盏的背景.jpg')";
+			}
+			function zuohua(){
+				document.getElementById("chashi").style.display="block";
+				document.getElementById("hand8").style.display="block";
+			}
+			function zuohua2(){
+				document.getElementById("hand8").style.display="none";
+				document.getElementById("hand9").style.display="block";
+			}
+			function zuohua3(){
+				document.getElementById("rupan").style.display="none";
+				document.getElementById("hand9").style.display="none";
+				document.getElementById("zuohua").style.display="block";
+				document.getElementById("hand10").style.display="block";
+			}
+			function zuohua4(){
+				document.getElementById("hand10").style.display="none";
+				document.getElementById("zuohua").style.display="none";
+				document.getElementById("final").style.display="block";
+				document.getElementById("mohu").style.display="block";
+				document.getElementById("tongguan").style.display="block";
+				document.getElementById("xia").style.display="block";
+			}
+			document.addEventListener("click",function(){
+	    		document.getElementById("au").play();
+	    	})
+			function playPause() {
+         		var music = document.getElementById("au");    
+         		var music_btn = document.getElementById("music");    
+         		if (music.paused){    
+             		music.play();      
+         		}    
+         		else{    
+             		music.pause();                   
+         		}
+         }
+			var index=0;
+			function kp(){
+				if(index==0){
+					document.getElementById("kp2").style.display="block";
+					index=1;
+				}
+				else{
+					document.getElementById("kp2").style.display="none";
+					index=0;
+				}
+			}
+			function kaishi(){
+				document.getElementById("intro").style.display="none";
+				document.getElementById("button").style.display="none";
+				document.getElementById("tishi").style.display="block";
+				document.getElementById("but").style.display="block";
+			}
+			function close(){
+				document.getElementById("tishi").style.display="none";
+				document.getElementById("but").style.display="none";
+				document.getElementById("mohu2").style.display="none";
+			}
+		</script>
+	</body>
+</html>
